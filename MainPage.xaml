@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="RegistroProductos.MainPage" Title="Registro de Productos">
+<ScrollView>
+<VerticalStackLayout Padding="24" Spacing="12" MaximumWidthRequest="560">
+<Label Text="Registro de Productos" FontSize="28" FontAttributes="Bold" />
+<Label Text="Los productos se guardan localmente en este dispositivo." />
+<Label Text="ID: generado automáticamente al guardar" />
+<Label Text="Nombre del producto *" />
+<Entry x:Name="NombreEntry" Placeholder="Ejemplo: Cuaderno" MaxLength="100" />
+<Label Text="Descripción *" />
+<Editor x:Name="DescripcionEditor" Placeholder="Describe el producto" MaxLength="500" AutoSize="TextChanges" MinimumHeightRequest="90" />
+<Label Text="Precio *" />
+<Entry x:Name="PrecioEntry" Placeholder="Ejemplo: 25,50 o 25.50" Keyboard="Numeric" MaxLength="20" />
+<Label Text="Cantidad *" />
+<Entry x:Name="CantidadEntry" Placeholder="Número entero, por ejemplo: 10" Keyboard="Numeric" MaxLength="10" />
+<Label Text="Fecha de registro: se asigna al guardar" />
+<Label Text="* Todos los campos de entrada son obligatorios." FontSize="12" />
+<Button x:Name="GuardarButton" Text="Guardar Producto" Clicked="OnGuardarProductoClicked" />
+<ActivityIndicator x:Name="GuardandoIndicator" IsVisible="False" IsRunning="False" />
+<Label x:Name="UltimoRegistroLabel" FontAttributes="Bold" />
+</VerticalStackLayout>
+</ScrollView>
+</ContentPage>

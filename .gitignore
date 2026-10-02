@@ -1,0 +1,15 @@
+bin/
+obj/
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.db
+*.db3
+*.sqlite
+*.sqlite3
+*.apk
+*.aab
+*.keystore
+*.jks
